@@ -1,0 +1,21 @@
+.Navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Navigation button {
+    margin: 10px;
+    width: 160px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    color: #888888;
+    font-size: 14px;
+}
+
+.Navigation button:hover {
+    box-shadow: 0px 1px 6px #00000029;
+    cursor: pointer;
+}
