@@ -5,9 +5,9 @@ import { Navigation } from '../Navigation/Navigation.jsx'
 export const Header = () => {
     return (
         <div className={s.Header}>
-            <p>
+            <h3>
                 uma seleção de produtos
-            </p>
+            </h3>
             <h1>
                 especial para você
             </h1>

@@ -1,3 +1,28 @@
-.headerDiv {
+.Header {
+    padding-top: 15px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 70%);
     background-color: #707070;
+}
+
+.Header h3, p, h1 {
+    color: #FFFFFF;
+    margin: 5px;
+}
+
+.Header h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Header h1 {
+    font-size: 36px;
+}
+
+.Header p {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
