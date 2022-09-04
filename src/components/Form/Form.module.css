@@ -1,0 +1,42 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.radioInput {
+    display: flex;
+    flex-direction: row;
+}
+
+.radioInput input {
+    margin: 10px 5px 10px 5px;
+}
+
+.radioInput label {
+    margin: 10px 5px 10px 5px; 
+}
+
+.textInput {
+    margin: 10px 0 10px 0;
+    border: solid 1px #707070;
+    width: 340px;
+    height: 30px;
+}
+
+.Form button {
+    margin: 10px 0 10px 0;
+    background-color: #ffff;
+    width: 340px;
+    height: 39px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #888888;
+    transition: 0.4s;
+}
+
+.Form button:hover {
+    background-color: #707070;
+    color: #ffff;
+    cursor: pointer;
+}
