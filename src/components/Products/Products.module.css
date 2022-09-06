@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-button {
+.moreProductsButton {
     margin-top: 10px;
     width: 260px;
     height: 39px;
@@ -23,7 +23,7 @@ button {
     transition: 0.4s;
 }
 
-button:hover {
+.moreProductsButton:hover {
     background-color: #707070;
     color: #ffff;
     cursor: pointer;

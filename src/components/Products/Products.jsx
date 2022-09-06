@@ -49,7 +49,7 @@ export const Products = () => {
         })}
             </div>
 
-            <button onClick={showMoreProducts}>
+            <button className={s.moreProductsButton} onClick={showMoreProducts}>
                 Ainda mais produtos aqui!
             </button>
     </div>
