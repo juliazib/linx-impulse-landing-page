@@ -31,7 +31,7 @@ export const Products = () => {
     return (
         <div>
             <div className={s.Cards}>
-            {product.map((product) => {
+            {product.map((product,index) => {
             return <Card 
             image= {product.image}
             title= {product.name}
@@ -40,6 +40,7 @@ export const Products = () => {
             newPrice= {product.price}
             numberOfInstallments= {product.installments.count}
             installmentValue= {product.installments.value}
+            key = {index}
         />
         })}
             </div>
