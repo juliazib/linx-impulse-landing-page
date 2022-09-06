@@ -1,6 +1,30 @@
+.Products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+button {
+    margin-top: 10px;
+    width: 260px;
+    height: 39px;
+    background-color: #ffff;
+    color: #888888;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #707070;
+    color: #ffff;
+    cursor: pointer;
 }

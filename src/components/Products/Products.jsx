@@ -30,7 +30,7 @@ export const Products = () => {
     }, [page])
 
     return (
-        <div>
+        <div className={s.Products}>
             <SectionTitle
                 title="Sua seleção especial"
             />
