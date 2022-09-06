@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Card } from '../Card/Card.jsx'
+import { SectionTitle } from '../SectionTitle/SectionTitle.jsx'
 import s from './Products.module.css'
 
 export const Products = () => {
@@ -30,6 +31,9 @@ export const Products = () => {
 
     return (
         <div>
+            <SectionTitle
+                title="Sua seleção especial"
+            />
             <div className={s.Cards}>
             {product.map((product,index) => {
             return <Card 
