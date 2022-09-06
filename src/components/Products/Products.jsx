@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Card } from '../Card/Card.jsx'
+import s from './Products.module.css'
 
 export const Products = () => {
 
@@ -29,7 +30,7 @@ export const Products = () => {
 
     return (
         <div>
-            <div>
+            <div className={s.Cards}>
             {product.map((product) => {
             return <Card 
             image= {product.image}

@@ -22,7 +22,7 @@ export const Form = () => {
           alert('Insira um e-mail válido.')
           return
         }
-        alert('Cadastro feito com sucesso');
+        alert('Cadastro feito com sucesso')
         window.location.reload()
       }
 
