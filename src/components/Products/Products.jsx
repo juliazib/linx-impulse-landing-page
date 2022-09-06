@@ -14,9 +14,9 @@ export const Products = () => {
         try {
             let res = await fetch(url)
             let data = await res.json()
-            setProduct([...product, ...data.products]) 
+            setProduct([...product, ...data.products])
         }
-        catch(error) {
+        catch (error) {
             console.log(error)
         }
     }
@@ -35,23 +35,23 @@ export const Products = () => {
                 title="Sua seleção especial"
             />
             <div className={s.Cards}>
-            {product.map((product,index) => {
-            return <Card 
-            image= {product.image}
-            title= {product.name}
-            description= {product.description}
-            oldPrice={product.oldPrice}
-            newPrice= {product.price}
-            numberOfInstallments= {product.installments.count}
-            installmentValue= {product.installments.value}
-            key = {index}
-        />
-        })}
+                {product.map((product, index) => {
+                    return <Card
+                        image={product.image}
+                        title={product.name}
+                        description={product.description}
+                        oldPrice={product.oldPrice}
+                        newPrice={product.price}
+                        numberOfInstallments={product.installments.count}
+                        installmentValue={product.installments.value}
+                        key={index}
+                    />
+                })}
             </div>
 
             <button className={s.moreProductsButton} onClick={showMoreProducts}>
                 Ainda mais produtos aqui!
             </button>
-    </div>
+        </div>
     )
 }
