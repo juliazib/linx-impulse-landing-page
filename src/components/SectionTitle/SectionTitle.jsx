@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import s from './SectionTitle.module.css'
 
 export const SectionTitle = ({title}) => {
