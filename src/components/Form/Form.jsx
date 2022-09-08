@@ -5,16 +5,16 @@ import { useState } from 'react'
 
 export const Form = () => {
     const [email, setEmail] = useState("")
-    const [CPF, setCPF] = useState("")
+    const [cpf, setCPF] = useState("")
 
     const handleValidationResults = (event) => {
         event.preventDefault()
         
-        if(!validateEmail(email) && !validateCPF(CPF)) {
+        if(!validateEmail(email) && !validateCPF(cpf)) {
           alert('Revise os campos de e-mail e CPF. Suas informações são inválidas.')
           return
         }
-        if(!validateCPF(CPF)) {
+        if(!validateCpf(cpf)) {
           alert('Insira um CPF válido.')
           return
         }

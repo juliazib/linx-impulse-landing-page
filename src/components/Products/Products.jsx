@@ -5,16 +5,16 @@ import s from './Products.module.css'
 
 export const Products = () => {
 
-    const [page, atPage] = useState(1)
-    const [product, setProduct] = useState([])
+    const [page, setPage] = useState(1)
+    const [products, setProducts] = useState([])
 
     const url = `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`
 
-    const getProduct = async () => {
+    const getProducts = async () => {
         try {
             let res = await fetch(url)
             let data = await res.json()
-            setProduct([...product, ...data.products])
+            setProducts([...products, ...data.products])
         }
         catch (error) {
             console.log(error)
@@ -22,11 +22,11 @@ export const Products = () => {
     }
 
     const showMoreProducts = () => {
-        atPage(page + 1)
+        setPage(page + 1)
     }
 
     useEffect(() => {
-        getProduct()
+        getProducts()
     }, [page])
 
     return (
@@ -35,7 +35,7 @@ export const Products = () => {
                 title="Sua seleção especial"
             />
             <div className={s.Cards}>
-                {product.map((product, index) => {
+                {products.map((product, index) => {
                     return <Card
                         image={product.image}
                         title={product.name}
