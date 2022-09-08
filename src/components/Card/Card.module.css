@@ -1,0 +1,47 @@
+.Card {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 200px;
+}
+
+.Card img {
+    width: 120px;
+    height: 90px;
+}
+
+.Card p {
+    color: #888888;
+}
+
+.title {
+    font-size: 15px;
+}
+
+.regularText {
+    font-size: 13px;
+}
+
+.newPrice {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.Card button {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: #ffff;
+    color: #888888;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.Card button:hover {
+    background-color: #707070;
+    color: #ffff;
+    cursor: pointer;
+}
