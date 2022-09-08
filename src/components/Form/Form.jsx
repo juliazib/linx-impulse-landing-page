@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Form.module.css'
-import { validateEmail, validateCPF } from './FormValidation.jsx'
+import { validateEmail, validateCPF } from '../../utils/FormValidation.jsx'
 import { useState } from 'react'
 
 export const Form = () => {
@@ -14,7 +14,7 @@ export const Form = () => {
           alert('Revise os campos de e-mail e CPF. Suas informações são inválidas.')
           return
         }
-        if(!validateCpf(cpf)) {
+        if(!validateCPF(cpf)) {
           alert('Insira um CPF válido.')
           return
         }

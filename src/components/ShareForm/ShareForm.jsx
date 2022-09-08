@@ -1,7 +1,7 @@
 import React from 'react'
 import { SectionTitle } from '../SectionTitle/SectionTitle'
 import s from './ShareForm.module.css'
-import { validateEmail } from '../Form/FormValidation'
+import { validateEmail } from '../../utils/FormValidation'
 import { useState } from 'react'
 
 export const ShareForm = () => {
