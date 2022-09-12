@@ -1,0 +1,57 @@
+.ShareForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ShareForm p {
+    margin-top: 50px;
+    color: #888888;
+    font-size: 16px;
+}
+
+.ShareFormForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.ShareFormDivider {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.labelAndInput {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.labelAndInput label {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.ShareFormInput {
+    width: 340px;
+    height: 30px;
+}
+
+.ShareFormButton {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: #ffff;
+    color: #888888;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.ShareFormButton:hover {
+    background-color: #707070;
+    color: #ffff;
+    cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Card } from '../Card/Card.jsx'
+import { SectionTitle } from '../SectionTitle/SectionTitle.jsx'
 import s from './Products.module.css'
 
 export const Products = () => {
@@ -29,7 +30,10 @@ export const Products = () => {
     }, [page])
 
     return (
-        <div>
+        <div className={s.Products}>
+            <SectionTitle
+                title="Sua seleção especial"
+            />
             <div className={s.Cards}>
             {product.map((product,index) => {
             return <Card 
@@ -45,7 +49,7 @@ export const Products = () => {
         })}
             </div>
 
-            <button onClick={showMoreProducts}>
+            <button className={s.moreProductsButton} onClick={showMoreProducts}>
                 Ainda mais produtos aqui!
             </button>
     </div>
