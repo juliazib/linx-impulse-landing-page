@@ -6,8 +6,8 @@ import { ShareForm } from './components/ShareForm/ShareForm.jsx'
 import { Footer } from './components/Footer/Footer.jsx'
 
 function App() {
-    return <div>
-    <Header/>
+  return <div>
+    <Header />
     <MainContent />
     <Products />
     <ShareForm />

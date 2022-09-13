@@ -1,20 +1,20 @@
 import React from 'react'
 import s from './Form.module.css'
-import { validateEmail, validateCPF } from './FormValidation.jsx'
+import { validateEmail, validateCPF } from '../../utils/FormValidation.jsx'
 import { useState } from 'react'
 
 export const Form = () => {
     const [email, setEmail] = useState("")
-    const [CPF, setCPF] = useState("")
+    const [cpf, setCPF] = useState("")
 
     const handleValidationResults = (event) => {
         event.preventDefault()
         
-        if(!validateEmail(email) && !validateCPF(CPF)) {
+        if(!validateEmail(email) && !validateCPF(cpf)) {
           alert('Revise os campos de e-mail e CPF. Suas informações são inválidas.')
           return
         }
-        if(!validateCPF(CPF)) {
+        if(!validateCPF(cpf)) {
           alert('Insira um CPF válido.')
           return
         }
