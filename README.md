@@ -23,7 +23,7 @@ Para rodar nosso projeto é necessário que você tenha instalado na sua máquin
 -   VSCode
 
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando o projeto
 
 Para instalar o projeto, siga estas etapas:
 
